@@ -13,10 +13,10 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle main center>
         Welcome To <br />
-        Sergey Leveyv Portfolio
+        Sergey Leveyv`s Portfolio
       </SectionTitle>
       <SectionText>I am a Full stack Developer....</SectionText>
-      <Button onClick={() => (window.location = "#")}>Learn More</Button>
+      <Button onClick={() => (window.location = "#")}>All Projects</Button>
     </LeftSection>
   </Section>
 );
