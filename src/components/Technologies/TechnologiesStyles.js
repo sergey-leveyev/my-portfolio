@@ -54,6 +54,13 @@ export const List = styled.ul`
   }
 `;
 
+export const List2 = styled.ul`
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+`;
+
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: column;

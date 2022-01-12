@@ -1,5 +1,6 @@
 import Frontskill from "./Front/FrontSkill";
 import Backskill from "./Back/BackSkill";
+import Databases from "./Databases/Databases";
 
 import {
   Section,
@@ -22,6 +23,7 @@ const Technologies = () => (
     <List>
       <Frontskill />
       <Backskill />
+      <Databases />
     </List>
   </Section>
 );

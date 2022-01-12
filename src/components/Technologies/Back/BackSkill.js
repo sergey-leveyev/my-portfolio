@@ -1,6 +1,8 @@
 import { DiDatabase, DiNodejsSmall, DiDotnet } from "react-icons/di";
 import { BiData } from "react-icons/bi";
 import { SiDotnet } from "react-icons/si";
+import { GiServerRack } from "react-icons/gi";
+import { AiOutlineCloudServer } from "react-icons/ai";
 
 import {
   ListContainer,
@@ -16,7 +18,7 @@ const Backskill = () => {
     <ListItem>
       <ListContainer>
         <TitelAndIcon>
-          <DiDatabase size="3rem" />
+          <AiOutlineCloudServer style={{ marginRight: "5px" }} size="3rem" />
           <ListTitle>Back End</ListTitle>
         </TitelAndIcon>
 
@@ -28,11 +30,7 @@ const Backskill = () => {
           </TextAndIcon>
           <TextAndIcon>
             <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
-            .Net & entity
-          </TextAndIcon>
-          <TextAndIcon>
-            <BiData style={{ margin: "5px" }} size="2.5rem" />
-            MongoDB
+            .Net Core
           </TextAndIcon>
         </ListParagraph>
       </ListContainer>
