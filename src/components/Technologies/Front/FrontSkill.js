@@ -4,10 +4,10 @@ import {
   DiHtml5,
   DiMaterializecss,
   DiJavascript1,
-  DiSass
+  DiSass,
 } from "react-icons/di";
 
-import {SiRedux} from "react-icons/si"
+import { SiRedux, SiTypescript } from "react-icons/si";
 
 import {
   ListContainer,
@@ -43,12 +43,16 @@ const Frontskill = () => {
                 <DiSass style={{ margin: "5px" }} size="2rem" />
                 SASS/SCSS
               </TextAndIcon>
+              <TextAndIcon>
+                <DiJavascript1 style={{ margin: "5px" }} size="2rem" />
+                Javascript
+              </TextAndIcon>
             </div>
 
             <div>
               <TextAndIcon>
-                <DiJavascript1 style={{ margin: "5px" }} size="2rem" />
-                Javascript
+                <SiTypescript style={{ margin: "5px" }} size="2rem" />
+                Typescript
               </TextAndIcon>
               <TextAndIcon>
                 <DiReact style={{ margin: "5px" }} size="2.1rem" />
