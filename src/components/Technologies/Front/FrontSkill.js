@@ -7,7 +7,7 @@ import {
   DiSass,
 } from "react-icons/di";
 
-import { SiRedux, SiTypescript } from "react-icons/si";
+import { SiRedux, SiTypescript, SiBlazor } from "react-icons/si";
 
 import {
   ListContainer,
@@ -57,6 +57,10 @@ const Frontskill = () => {
               <TextAndIcon>
                 <DiReact style={{ margin: "5px" }} size="2.1rem" />
                 ReactJS
+              </TextAndIcon>
+              <TextAndIcon>
+                <SiBlazor style={{ margin: "5px" }} size="2.1rem" />
+                Blazor
               </TextAndIcon>
               <TextAndIcon>
                 <SiRedux style={{ margin: "5px" }} size="1.85rem" />
