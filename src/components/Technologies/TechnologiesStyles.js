@@ -55,10 +55,15 @@ export const List = styled.ul`
 `;
 
 export const List2 = styled.ul`
+  margin-top: 15px;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 40px;
+
+  @media (max-width: 784px) {
+    grid-template-columns: repeat(1, 2fr);
+  }
 `;
 
 export const ListContainer = styled.div`
