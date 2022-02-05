@@ -26,28 +26,37 @@ const Projects = () => (
     <SectionTitle main>Project</SectionTitle>
     <GridContainer>
       {projects.map(
-        ({ id, image, title, description, tags, source, visit }) => (
-          <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
-            <UtilityList>
-              <ExternalLinks href={visit}>Code</ExternalLinks>
-              <ExternalLinks href={source}>Source</ExternalLinks>
-            </UtilityList>
-          </BlogCard>
-        )
+        ({ id, image, title, description, tags, source, visit }, index) => {
+          {
+            //  true &&
+            return (
+              <>
+                {index < 4 && (
+                  <BlogCard key={index}>
+                    <Img src={image} />
+                    <TitleContent>
+                      <HeaderThree title>{title}</HeaderThree>
+                      <Hr />
+                    </TitleContent>
+                    <CardInfo>{description}</CardInfo>
+                    <div>
+                      <TitleContent>Stack</TitleContent>
+                      <TagList>
+                        {tags.map((tag, i) => (
+                          <Tag key={i}>{tag}</Tag>
+                        ))}
+                      </TagList>
+                    </div>
+                    <UtilityList>
+                      <ExternalLinks href={visit}>Code</ExternalLinks>
+                      <ExternalLinks href={source}>Source</ExternalLinks>
+                    </UtilityList>
+                  </BlogCard>
+                )}
+              </>
+            );
+          }
+        }
       )}
     </GridContainer>
   </Section>

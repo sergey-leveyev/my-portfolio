@@ -16,7 +16,9 @@ const Hero = () => (
         Sergey Leveyv`s Portfolio
       </SectionTitle>
       <SectionText>I am a Full stack Developer....</SectionText>
-      <Button onClick={() => (window.location = "#")}>All Projects</Button>
+      <Button onClick={() => (window.location = "AllProjects")}>
+        All Projects
+      </Button>
     </LeftSection>
   </Section>
 );

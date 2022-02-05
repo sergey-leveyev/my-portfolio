@@ -39,12 +39,24 @@ export const projects = [
     visit: "https://google.com",
     id: 3,
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  {
+    title: "TEST1",
+    description:
+      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    image: "/images/tuti.png",
+    tags: ["React", "WebRTC"],
+    source: "https://google.com",
+    visit: "https://google.com",
+    id: 4,
+  },
+  {
+    title: "TEST2",
+    description:
+      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+    image: "/images/tuti.png",
+    tags: ["React", "ChatEngine", "Firebase"],
+    source: "https://google.com",
+    visit: "https://google.com",
+    id: 6,
+  },
 ];
