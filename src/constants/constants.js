@@ -24,7 +24,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: "/images/tuti.png",
-    tags: ["React", "WebRTC"],
+    tags: ["React", "dotnet"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 2,
@@ -34,7 +34,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
     image: "/images/tuti.png",
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: ["React native", "dotnet", "Azure"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 3,
@@ -44,7 +44,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: "/images/tuti.png",
-    tags: ["React", "WebRTC"],
+    tags: ["React", "sass", "nodejs"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 4,
@@ -54,7 +54,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
     image: "/images/tuti.png",
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: ["React native", "nodejs", "Firebase"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 6,

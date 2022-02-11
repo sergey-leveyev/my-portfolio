@@ -19,6 +19,8 @@ import {
   SectionTitle,
 } from "../styles/GlobalComponents";
 
+import Filter from "../components/Filter/Filter.component";
+
 import { projects } from "../constants/constants";
 
 function AllProjects() {
@@ -27,6 +29,7 @@ function AllProjects() {
       <Section id="project">
         <SectionDivider />
         <SectionTitle main>All Project</SectionTitle>
+        <Filter />
         <GridContainer>
           {projects.map(
             ({ id, image, title, description, tags, source, visit }) => (
