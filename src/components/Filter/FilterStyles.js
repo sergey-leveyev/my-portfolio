@@ -52,4 +52,9 @@ export const FilterOption = styled.div`
   cursor: pointer;
   display: block;
   padding: 8px 10px;
+
+  &:hover {
+    background-color: #f2f9fc;
+    color: #333;
+  }
 `;

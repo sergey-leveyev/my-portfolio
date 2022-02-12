@@ -23,6 +23,10 @@ import Filter from "../components/Filter/Filter.component";
 
 import { projects } from "../constants/constants";
 
+import { test } from "../constants/filter";
+
+console.log("From pages >>>>>", test());
+
 function AllProjects() {
   return (
     <Layout>
