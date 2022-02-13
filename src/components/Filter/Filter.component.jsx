@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   FilterDropDown,
   FilterControl,
@@ -6,11 +7,20 @@ import {
   FilterArrow,
   FilterOptions,
   FilterOption,
+  FilterInput,
+  Button,
 } from "./FilterStyles";
 
+import {filterd} from "../../constants/filter"
+
+const options = ["nodejs", "reactjs", "dotnet"];
+
+filterd.push("dsdsds")
 
 
-const options = ["nodejs", "reactjs"];
+console.log(filterd);
+
+
 
 const Filter = () => {
   const [open, setOpen] = useState(false);
@@ -27,8 +37,16 @@ const Filter = () => {
       </FilterControl>
       <FilterOptions display={open ? "block" : null}>
         {options.map((option, i) => {
-          return <FilterOption key={i}>{option.toString()}</FilterOption>;
+          return (
+            <FilterOption onChange={() => console.log(option)} key={i}>
+              <label style={{ cursor: "pointer" }}>
+                <FilterInput />
+                {option.toString()}
+              </label>
+            </FilterOption>
+          );
         })}
+        <Button>Filter</Button>
       </FilterOptions>
     </FilterDropDown>
   );

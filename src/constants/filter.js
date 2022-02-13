@@ -1,9 +1,14 @@
 import { projects } from "./constants";
 
-export const test = () => {
-  console.log("From filter >>>>>",projects);
+export const filterd = [];
+const req = ["nodejs"];
 
-  
+for (let i = 0; i < projects.length; i++) {
+  const tags = projects[i].tags;
 
-  return projects;
-};
+  for (let x = 0; x < req.length; x++) {
+    if (tags.includes(req[x])) {
+      filterd.push(projects[i]);
+    }
+  }
+}

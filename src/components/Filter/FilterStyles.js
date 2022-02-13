@@ -58,3 +58,28 @@ export const FilterOption = styled.div`
     color: #333;
   }
 `;
+
+export const FilterInput = styled.input.attrs({
+  type: "checkbox",
+})`
+  margin-right: 3px;
+  position: relative;
+  top: 1px;
+ 
+`;
+
+export const Button = styled.button`
+  background-color: #4285f4;
+  padding: 5px 5px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+
+  &:hover {
+    background-color: #3a70c9;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+`;
