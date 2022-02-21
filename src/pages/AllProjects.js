@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Layout from "../layout/Layout";
 import {
   BlogCard,
@@ -25,17 +27,19 @@ import { projects } from "../constants/constants";
 
 import { filterd } from "../constants/filter";
 
-// console.log("From pages >>>>>", filterd);
+
 
 function AllProjects() {
+  const [list, setList] = useState(projects);
+
   return (
     <Layout>
       <Section id="project">
         <SectionDivider />
         <SectionTitle main>All Project</SectionTitle>
-        <Filter />
+        <Filter setList={setList} />
         <GridContainer>
-          {projects.map(
+          {list.map(
             ({ id, image, title, description, tags, source, visit }) => (
               <BlogCard key={id}>
                 <Img src={image} />

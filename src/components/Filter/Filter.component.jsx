@@ -11,18 +11,26 @@ import {
   Button,
 } from "./FilterStyles";
 
-import {filterd} from "../../constants/filter"
+import { filterd } from "../../constants/filter";
 
-const options = ["nodejs", "reactjs", "dotnet"];
+// const options = ["nodejs", "reactjs", "dotnet"];
 
-filterd.push("dsdsds")
+const options2 = [
+  {
+    option: "nodejs",
+    checked: false,
+  },
+  {
+    option: "reactjs",
+    checked: false,
+  },
+];
+
+// filterd.push();
 
 
-console.log(filterd);
 
-
-
-const Filter = () => {
+const Filter = ({setList}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -36,17 +44,27 @@ const Filter = () => {
         <FilterArrow />
       </FilterControl>
       <FilterOptions display={open ? "block" : null}>
-        {options.map((option, i) => {
+        {options2.map((e, i) => {
           return (
-            <FilterOption onChange={() => console.log(option)} key={i}>
+            <FilterOption
+              onChange={() => {
+                options2[i].checked = !options2[i].checked;
+                if (options2[i].checked) {
+                  // console.log(options2[i].option, options2[i].checked);
+                  console.log(filterd);
+                  filterd.push(options2[i].option);
+                }
+              }}
+              key={i}
+            >
               <label style={{ cursor: "pointer" }}>
                 <FilterInput />
-                {option.toString()}
+                {e.option}
               </label>
             </FilterOption>
           );
         })}
-        <Button>Filter</Button>
+        <Button>Done</Button>
       </FilterOptions>
     </FilterDropDown>
   );

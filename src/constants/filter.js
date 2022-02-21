@@ -1,7 +1,7 @@
 import { projects } from "./constants";
 
 export const filterd = [];
-const req = ["nodejs"];
+const req = [];
 
 for (let i = 0; i < projects.length; i++) {
   const tags = projects[i].tags;

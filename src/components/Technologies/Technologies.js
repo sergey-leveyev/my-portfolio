@@ -17,8 +17,8 @@ const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a Technologies in the web development world. From
-      Back-end To FrontEnd
+      I've worked with a range of Technologies in the web development world.
+      From Back-end To FrontEnd
     </SectionText>
     <List>
       <Frontskill />
