@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+import { getProjects } from "../redux/actions/projectAction";
+
+import { wrapper } from "../redux/store";
+
+import { useSelector } from "react-redux";
 
 import Layout from "../layout/Layout";
 import {
@@ -21,28 +25,20 @@ import {
   SectionTitle,
 } from "../styles/GlobalComponents";
 
-import Filter from "../components/Filter/Filter.component";
-
-import { projects } from "../constants/constants";
-
-import { filterd } from "../constants/filter";
-
-
-
-function AllProjects() {
-  const [list, setList] = useState(projects);
+export default function AllProjects() {
+  const { allProjects } = useSelector((state) => state.allProjects);
 
   return (
     <Layout>
       <Section id="project">
         <SectionDivider />
         <SectionTitle main>All Project</SectionTitle>
-        <Filter setList={setList} />
+     
         <GridContainer>
-          {list.map(
-            ({ id, image, title, description, tags, source, visit }) => (
-              <BlogCard key={id}>
-                <Img src={image} />
+          {allProjects.map(
+            ({ _id, title, description, tags, source, visit }) => (
+              <BlogCard key={_id}>
+                {/* <Img src={image} /> */}
                 <TitleContent>
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
@@ -69,4 +65,9 @@ function AllProjects() {
   );
 }
 
-export default AllProjects;
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) =>
+    async ({ req }) => {
+      await store.dispatch(getProjects(req));
+    }
+);

@@ -6,7 +6,11 @@ import Scrollbtn from "../components/ScrollBtn/ScrollBtn";
 import Layout from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 
-const Home = () => {
+import { getProjects } from "../redux/actions/projectAction";
+
+import { wrapper } from "../redux/store";
+
+export default function Home() {
   return (
     <Layout>
       <Section grid>
@@ -18,6 +22,11 @@ const Home = () => {
       <Scrollbtn />
     </Layout>
   );
-};
+}
 
-export default Home;
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) =>
+    async ({ req }) => {
+      await store.dispatch(getProjects(req));
+    }
+);

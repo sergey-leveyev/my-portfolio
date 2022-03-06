@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useSelector } from "react-redux";
+
 import {
   BlogCard,
   CardInfo,
@@ -13,27 +15,28 @@ import {
   UtilityList,
   Img,
 } from "./ProjectsStyles";
+
 import {
   Section,
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
 
-const Projects = () => (
-  <Section id="project">
-    <SectionDivider />
-    <SectionTitle main>Project</SectionTitle>
-    <GridContainer>
-      {projects.map(
-        ({ id, image, title, description, tags, source, visit }, index) => {
-          {
-            //  true &&
+const Projects = () => {
+  const { allProjects } = useSelector((state) => state.allProjects);
+
+  return (
+    <Section id="project">
+      <SectionDivider />
+      <SectionTitle main>Project</SectionTitle>
+      <GridContainer>
+        {allProjects.map(
+          ({ _id, title, description, tags, source, visit }, index) => {
             return (
               <>
                 {index < 4 && (
-                  <BlogCard key={index}>
-                    <Img src={image} />
+                  <BlogCard key={_id}>
+                    {/* <Img src={image} /> */}
                     <TitleContent>
                       <HeaderThree title>{title}</HeaderThree>
                       <Hr />
@@ -56,10 +59,10 @@ const Projects = () => (
               </>
             );
           }
-        }
-      )}
-    </GridContainer>
-  </Section>
-);
+        )}
+      </GridContainer>
+    </Section>
+  );
+};
 
 export default Projects;
