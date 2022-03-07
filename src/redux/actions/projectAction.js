@@ -11,13 +11,11 @@ export const getProjects = (req) => async (dispatch) => {
   try {
     const { origin } = absoluteUrl(req);
     const { data } = await axios.get(`${origin}/api/projects`);
-    console.log(data);
     dispatch({
       type: ALL_PROJRCTS_SUCCESS,
       payload: data,
     });
   } catch (error) {
-   
     dispatch({ type: ALL_PROJRCTS_FAIL, payload: error.response.data.message });
   }
 };

@@ -33,30 +33,30 @@ const Projects = () => {
         {allProjects.map(
           ({ _id, title, description, tags, source, visit }, index) => {
             return (
-              <>
+              <div key={_id}>
                 {index < 4 && (
-                  <BlogCard key={_id}>
+                  <BlogCard>
                     {/* <Img src={image} /> */}
                     <TitleContent>
                       <HeaderThree title>{title}</HeaderThree>
                       <Hr />
                     </TitleContent>
                     <CardInfo>{description}</CardInfo>
-                    <div>
+                    <>
                       <TitleContent>Stack</TitleContent>
                       <TagList>
                         {tags.map((tag, i) => (
                           <Tag key={i}>{tag}</Tag>
                         ))}
                       </TagList>
-                    </div>
+                    </>
                     <UtilityList>
                       <ExternalLinks href={visit}>Code</ExternalLinks>
                       <ExternalLinks href={source}>Source</ExternalLinks>
                     </UtilityList>
                   </BlogCard>
                 )}
-              </>
+              </div>
             );
           }
         )}
