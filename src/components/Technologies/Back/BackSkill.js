@@ -22,17 +22,15 @@ const Backskill = () => {
           <ListTitle>Back End</ListTitle>
         </TitelAndIcon>
 
-        <ListParagraph>
-          Experience with
-          <TextAndIcon>
-            <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
-            Node.js
-          </TextAndIcon>
-          <TextAndIcon>
-            <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
-            .Net Core
-          </TextAndIcon>
-        </ListParagraph>
+        <ListParagraph>Experience with</ListParagraph>
+        <TextAndIcon>
+          <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
+          Node.js
+        </TextAndIcon>
+        <TextAndIcon>
+          <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
+          .Net Core
+        </TextAndIcon>
       </ListContainer>
     </ListItem>
   );

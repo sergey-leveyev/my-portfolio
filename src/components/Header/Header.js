@@ -40,11 +40,11 @@ const Header = () => (
           <NavLink>Project</NavLink>
         </Link>
       </li>
-      <l1>
+      <li>
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
-      </l1>
+      </li>
       <li>
         <Link href="#about">
           <NavLink>About</NavLink>

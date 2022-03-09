@@ -27,48 +27,46 @@ const Frontskill = () => {
           <DiCss3Full size="3rem" />
           <ListTitle>Front End</ListTitle>
         </TitelAndIcon>
-        <ListParagraph>
-          Experience with
-          <List2>
-            <div>
-              <TextAndIcon>
-                <DiHtml5 style={{ margin: "5px" }} size="2rem" />
-                HTML
-              </TextAndIcon>
-              <TextAndIcon>
-                <DiMaterializecss style={{ margin: "5px" }} size="2rem" />
-                CSS
-              </TextAndIcon>
-              <TextAndIcon>
-                <DiSass style={{ margin: "5px" }} size="2rem" />
-                SASS/SCSS
-              </TextAndIcon>
-              <TextAndIcon>
-                <DiJavascript1 style={{ margin: "5px" }} size="2rem" />
-                Javascript
-              </TextAndIcon>
-            </div>
+        <ListParagraph>Experience with</ListParagraph>
+        <List2>
+          <div>
+            <TextAndIcon>
+              <DiHtml5 style={{ margin: "5px" }} size="2rem" />
+              HTML
+            </TextAndIcon>
+            <TextAndIcon>
+              <DiMaterializecss style={{ margin: "5px" }} size="2rem" />
+              CSS
+            </TextAndIcon>
+            <TextAndIcon>
+              <DiSass style={{ margin: "5px" }} size="2rem" />
+              SASS/SCSS
+            </TextAndIcon>
+            <TextAndIcon>
+              <DiJavascript1 style={{ margin: "5px" }} size="2rem" />
+              Javascript
+            </TextAndIcon>
+          </div>
 
-            <div>
-              <TextAndIcon>
-                <SiTypescript style={{ margin: "5px" }} size="2rem" />
-                Typescript
-              </TextAndIcon>
-              <TextAndIcon>
-                <DiReact style={{ margin: "5px" }} size="2.1rem" />
-                ReactJS
-              </TextAndIcon>
-              <TextAndIcon>
-                <SiBlazor style={{ margin: "5px" }} size="2.1rem" />
-                Blazor
-              </TextAndIcon>
-              <TextAndIcon>
-                <SiRedux style={{ margin: "5px" }} size="1.85rem" />
-                Redux
-              </TextAndIcon>
-            </div>
-          </List2>
-        </ListParagraph>
+          <div>
+            <TextAndIcon>
+              <SiTypescript style={{ margin: "5px" }} size="2rem" />
+              Typescript
+            </TextAndIcon>
+            <TextAndIcon>
+              <DiReact style={{ margin: "5px" }} size="2.1rem" />
+              ReactJS
+            </TextAndIcon>
+            <TextAndIcon>
+              <SiBlazor style={{ margin: "5px" }} size="2.1rem" />
+              Blazor
+            </TextAndIcon>
+            <TextAndIcon>
+              <SiRedux style={{ margin: "5px" }} size="1.85rem" />
+              Redux
+            </TextAndIcon>
+          </div>
+        </List2>
       </ListContainer>
     </ListItem>
   );

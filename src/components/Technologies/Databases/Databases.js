@@ -20,25 +20,23 @@ const Databases = () => {
           <DiDatabase size="3rem" />
           <ListTitle>Databases</ListTitle>
         </TitelAndIcon>
-        <ListParagraph>
-          Experience with
-          <List2>
-            <div>
-              <TextAndIcon>
-                <SiMongodb style={{ margin: "5px" }} size="2rem" />
-                MongoDB
-              </TextAndIcon>
-              <TextAndIcon>
-                <SiFirebase style={{ margin: "5px" }} size="2rem" />
-                Firebase
-              </TextAndIcon>
-              <TextAndIcon>
-                <VscAzure style={{ margin: "5px" }} size="2rem" />
-                Azure
-              </TextAndIcon>
-            </div>
-          </List2>
-        </ListParagraph>
+        <ListParagraph>Experience with</ListParagraph>
+        <List2>
+          <div>
+            <TextAndIcon>
+              <SiMongodb style={{ margin: "5px" }} size="2rem" />
+              MongoDB
+            </TextAndIcon>
+            <TextAndIcon>
+              <SiFirebase style={{ margin: "5px" }} size="2rem" />
+              Firebase
+            </TextAndIcon>
+            <TextAndIcon>
+              <VscAzure style={{ margin: "5px" }} size="2rem" />
+              Azure
+            </TextAndIcon>
+          </div>
+        </List2>
       </ListContainer>
     </ListItem>
   );

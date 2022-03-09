@@ -33,14 +33,14 @@ export default function AllProjects() {
       <Section id="project">
         <SectionDivider />
         <SectionTitle main>All Project</SectionTitle>
-     
+
         <GridContainer>
           {allProjects.map(
             ({ _id, title, description, tags, source, visit }) => (
               <BlogCard key={_id}>
                 {/* <Img src={image} /> */}
                 <TitleContent>
-                  <HeaderThree title>{title}</HeaderThree>
+                  <HeaderThree>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
                 <CardInfo>{description}</CardInfo>
