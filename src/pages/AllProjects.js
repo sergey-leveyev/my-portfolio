@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
+
 import { getProjects } from "../redux/actions/projectAction";
 
-import { wrapper } from "../redux/store";
+import Pagination from "react-js-pagination";
 
-import { useSelector } from "react-redux";
+import { wrapper } from "../redux/store";
 
 import Layout from "../layout/Layout";
 import {
@@ -26,7 +29,17 @@ import {
 } from "../styles/GlobalComponents";
 
 export default function AllProjects() {
-  const { allProjects } = useSelector((state) => state.allProjects);
+  const router = useRouter();
+
+  const { allProjects, resPerPage, projectCount, filteredProjectsCount } =
+    useSelector((state) => state.allProjects);
+
+  let { page = 1 } = router.query;
+  page = Number(page);
+
+  const handlePagination = (pageNumber) => {
+    window.location.href = `/AllProjects/?page=${pageNumber}`;
+  };
 
   return (
     <Layout>
@@ -60,6 +73,20 @@ export default function AllProjects() {
             )
           )}
         </GridContainer>
+        {resPerPage < projectCount && (
+          <Pagination
+            activePage={page}
+            itemsCountPerPage={resPerPage}
+            totalItemsCount={projectCount}
+            onChange={handlePagination}
+            nextPageText={"Next"}
+            prevPageText={"Prev"}
+            firstPageText={"First"}
+            lastPageText={"Last"}
+            itemClass="page-item"
+            linkClass="page-link"
+          />
+        )}
       </Section>
     </Layout>
   );
@@ -67,7 +94,7 @@ export default function AllProjects() {
 
 export const getServerSideProps = wrapper.getServerSideProps(
   (store) =>
-    async ({ req }) => {
-      await store.dispatch(getProjects(req));
+    async ({ req, res, query }) => {
+      await store.dispatch(getProjects(req, query.page));
     }
 );

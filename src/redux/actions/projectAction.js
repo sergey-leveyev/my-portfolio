@@ -7,18 +7,25 @@ import {
   CLEAR_ERROR,
 } from "../constants/tyeps";
 
-export const getProjects = (req) => async (dispatch) => {
-  try {
-    const { origin } = absoluteUrl(req);
-    const { data } = await axios.get(`${origin}/api/projects`);
-    dispatch({
-      type: ALL_PROJRCTS_SUCCESS,
-      payload: data,
-    });
-  } catch (error) {
-    dispatch({ type: ALL_PROJRCTS_FAIL, payload: error.response.data.message });
-  }
-};
+export const getProjects =
+  (req, currentPageNo = 1) =>
+  async (dispatch) => {
+    try {
+      const { origin } = absoluteUrl(req);
+      const { data } = await axios.get(
+        `${origin}/api/projects?page=${currentPageNo}`
+      );
+      dispatch({
+        type: ALL_PROJRCTS_SUCCESS,
+        payload: data,
+      });
+    } catch (error) {
+      dispatch({
+        type: ALL_PROJRCTS_FAIL,
+        payload: error.response.data.message,
+      });
+    }
+  };
 
 //Clear Errors
 export const clearErrors = () => async (dispatch) => {

@@ -14,10 +14,16 @@ const allProjects = async (req, res) => {
     apiFeatures.filter();
 
     let projects = await apiFeatures.query;
-    let filteredProjectsCount = projects.length;
-    // projects = await apiFeatures.query;
 
-    apiFeatures.pagination(resPerPage);
+    const page = req.query.page;
+
+    console.log(page);
+    const startIndex = (page - 1) * resPerPage;
+    const endIndex = page * resPerPage;
+
+    projects = projects.slice(startIndex, endIndex);
+
+    let filteredProjectsCount = projects.length;
 
     res.status(200).json({
       success: true,
