@@ -30,7 +30,7 @@ export const FilterArrow = styled.div`
   width: 0;
 `;
 
-export const FilterOptions = styled.div`
+export const FilterForm = styled.form`
   display: ${(props) => (props.display ? props.display : "none")};
   background-color: #fff;
   border: 1px solid #ccc;
@@ -65,10 +65,11 @@ export const FilterInput = styled.input.attrs({
   margin-right: 3px;
   position: relative;
   top: 1px;
- 
 `;
 
-export const Button = styled.button`
+export const Button = styled.button.attrs({
+  type: "submit",
+})`
   background-color: #4285f4;
   padding: 5px 5px;
   margin: 8px 10px;

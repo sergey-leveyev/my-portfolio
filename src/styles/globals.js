@@ -49,11 +49,12 @@ const GlobalStyles = createGlobalStyle`
 }
 
 .page-item{
-  box-shadow: 3px 3px 10px rgb(80 78 78 / 50%);
+  
+  background: #6b3030;
   border-radius: 20px;
   margin: 2px;
   padding: 10px;
-  color: #fff;
+  
   cursor: pointer;
 }
 
@@ -63,12 +64,10 @@ const GlobalStyles = createGlobalStyle`
 }
 
 .page-link {
-  color: #fff;
-}
-
-.page-link:hover {
   color: #d4c0c0;
 }
+
+
 
 `;
 

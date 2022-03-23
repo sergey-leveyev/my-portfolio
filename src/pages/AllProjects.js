@@ -8,6 +8,7 @@ import Pagination from "react-js-pagination";
 import { wrapper } from "../redux/store";
 
 import Layout from "../layout/Layout";
+
 import {
   BlogCard,
   CardInfo,

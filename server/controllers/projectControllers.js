@@ -17,7 +17,6 @@ const allProjects = async (req, res) => {
 
     const page = req.query.page;
 
-    console.log(page);
     const startIndex = (page - 1) * resPerPage;
     const endIndex = page * resPerPage;
 

@@ -32,8 +32,8 @@ const Footer = () => {
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+          "Give me six hours to chop down a tree, and I will spend the first four sharpening the axe."  
+          Abraham Lincoln 
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
