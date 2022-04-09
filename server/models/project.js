@@ -13,18 +13,18 @@ const projectSchema = new mongoose.Schema({
     trim: true,
     maxLength: [500, "description cannot exceed 500 characters"],
   },
-  images: [
-    {
-      public_id: {
-        type: String,
-        required: true,
-      },
-      url: {
-        type: String,
-        required: true,
-      },
-    },
-  ],
+  // images: [
+  //   {
+  //     public_id: {
+  //       type: String,
+  //       required: true,
+  //     },
+  //     url: {
+  //       type: String,
+  //       required: true,
+  //     },
+  //   },
+  // ],
   tags: [
     {
       type: String,
@@ -40,6 +40,9 @@ const projectSchema = new mongoose.Schema({
   id: {
     type: Number,
     required: true,
+  },
+  image: {
+    type: String,
   },
 });
 

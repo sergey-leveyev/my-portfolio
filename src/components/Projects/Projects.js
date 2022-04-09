@@ -31,12 +31,12 @@ const Projects = () => {
       <SectionTitle main>Project</SectionTitle>
       <GridContainer>
         {allProjects.map(
-          ({ _id, title, description, tags, source, visit }, index) => {
+          ({ _id, title, description, tags, source, visit,image }, index) => {
             return (
               <div key={_id}>
                 {index < 4 && (
                   <BlogCard>
-                    {/* <Img src={image} /> */}
+                    <Img src={image} />
                     <TitleContent>
                       <HeaderThree>{title}</HeaderThree>
                       <Hr />
