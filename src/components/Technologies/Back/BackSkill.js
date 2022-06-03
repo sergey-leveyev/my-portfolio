@@ -1,7 +1,5 @@
-import { DiDatabase, DiNodejsSmall, DiDotnet } from "react-icons/di";
-import { BiData } from "react-icons/bi";
+import { DiNodejsSmall } from "react-icons/di";
 import { SiDotnet } from "react-icons/si";
-import { GiServerRack } from "react-icons/gi";
 import { AiOutlineCloudServer } from "react-icons/ai";
 
 import {
@@ -11,6 +9,7 @@ import {
   ListTitle,
   TextAndIcon,
   TitelAndIcon,
+  SingleColumnBox,
 } from "../TechnologiesStyles";
 
 const Backskill = () => {
@@ -23,14 +22,16 @@ const Backskill = () => {
         </TitelAndIcon>
 
         <ListParagraph>Experience with</ListParagraph>
-        <TextAndIcon>
-          <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
-          Node.js
-        </TextAndIcon>
-        <TextAndIcon>
-          <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
-          .Net Core
-        </TextAndIcon>
+        <SingleColumnBox>
+          <TextAndIcon>
+            <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
+            Node.js
+          </TextAndIcon>
+          <TextAndIcon>
+            <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
+            .Net Core
+          </TextAndIcon>
+        </SingleColumnBox>
       </ListContainer>
     </ListItem>
   );

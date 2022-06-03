@@ -9,7 +9,7 @@ import {
   ListTitle,
   TextAndIcon,
   TitelAndIcon,
-  List2,
+  SingleColumnBox,
 } from "../TechnologiesStyles";
 
 const Databases = () => {
@@ -21,8 +21,8 @@ const Databases = () => {
           <ListTitle>Databases</ListTitle>
         </TitelAndIcon>
         <ListParagraph>Experience with</ListParagraph>
-        <List2>
-          <div>
+     
+          <SingleColumnBox>
             <TextAndIcon>
               <SiMongodb style={{ margin: "5px" }} size="2rem" />
               MongoDB
@@ -35,8 +35,8 @@ const Databases = () => {
               <VscAzure style={{ margin: "5px" }} size="2rem" />
               Azure
             </TextAndIcon>
-          </div>
-        </List2>
+          </SingleColumnBox>
+      
       </ListContainer>
     </ListItem>
   );

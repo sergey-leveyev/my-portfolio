@@ -69,6 +69,7 @@ export const List2 = styled.ul`
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
@@ -114,7 +115,6 @@ export const ListParagraph = styled.p`
 `;
 
 export const ListItem = styled.li`
-  max-width: 320px;
   display: flex;
   flex-direction: column;
 
@@ -155,4 +155,8 @@ export const TextAndIcon = styled.div`
 
 export const TitelAndIcon = styled.div`
   display: flex;
+`;
+
+export const SingleColumnBox = styled.div`
+  margin-top: 15px;
 `;
