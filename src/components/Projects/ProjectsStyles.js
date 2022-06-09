@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  margin-top: 10px;
   object-fit: cover;
   overflow: hidden;
 `;
@@ -76,10 +77,9 @@ export const CardInfo = styled.p`
 
 export const UtilityList = styled.ul`
   list-style-type: none;
-  padding: 0;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
 `;
 
 export const ExternalLinks = styled.a`

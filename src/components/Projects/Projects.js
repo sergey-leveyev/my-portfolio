@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <Section id="project">
       <SectionDivider />
-      <SectionTitle main>Project</SectionTitle>
+      <SectionTitle main>Recent projects</SectionTitle>
       <GridContainer>
         {allProjects.map(
           ({ _id, title, description, tags, source, visit,image }, index) => {

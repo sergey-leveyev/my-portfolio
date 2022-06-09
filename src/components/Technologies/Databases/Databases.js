@@ -1,5 +1,5 @@
 import { DiDatabase } from "react-icons/di";
-import { SiMongodb, SiFirebase } from "react-icons/si";
+import { SiMongodb, SiFirebase, SiMicrosoftsqlserver } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 
 import {
@@ -21,22 +21,21 @@ const Databases = () => {
           <ListTitle>Databases</ListTitle>
         </TitelAndIcon>
         <ListParagraph>Experience with</ListParagraph>
-     
-          <SingleColumnBox>
-            <TextAndIcon>
-              <SiMongodb style={{ margin: "5px" }} size="2rem" />
-              MongoDB
-            </TextAndIcon>
-            <TextAndIcon>
-              <SiFirebase style={{ margin: "5px" }} size="2rem" />
-              Firebase
-            </TextAndIcon>
-            <TextAndIcon>
-              <VscAzure style={{ margin: "5px" }} size="2rem" />
-              Azure
-            </TextAndIcon>
-          </SingleColumnBox>
-      
+
+        <SingleColumnBox>
+          <TextAndIcon>
+            <SiMongodb style={{ margin: "5px" }} size="2rem" />
+            MongoDB
+          </TextAndIcon>
+          <TextAndIcon>
+            <SiFirebase style={{ margin: "5px" }} size="2rem" />
+            Firebase
+          </TextAndIcon>
+          <TextAndIcon>
+            <SiMicrosoftsqlserver style={{ margin: "5px" }} size="2rem" />
+            SQL Server
+          </TextAndIcon>
+        </SingleColumnBox>
       </ListContainer>
     </ListItem>
   );

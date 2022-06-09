@@ -5,6 +5,7 @@ import {
   DiMaterializecss,
   DiJavascript1,
   DiSass,
+  DiAngularSimple
 } from "react-icons/di";
 
 import { SiRedux, SiTypescript, SiBlazor } from "react-icons/si";
@@ -62,8 +63,8 @@ const Frontskill = () => {
               Blazor
             </TextAndIcon>
             <TextAndIcon>
-              <SiRedux style={{ margin: "5px" }} size="1.85rem" />
-              Redux
+              <DiAngularSimple style={{ margin: "5px" }} size="1.85rem" />
+              Angular
             </TextAndIcon>
           </div>
         </List2>
