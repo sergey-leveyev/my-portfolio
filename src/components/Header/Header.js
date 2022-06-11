@@ -46,11 +46,11 @@ const Header = () => {
                 <NavLink>Technologies</NavLink>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#about">
                 <NavLink>CV</NavLink>
               </Link>
-            </li>
+            </li> */}
           </Div2>
         </>
       ) : (
