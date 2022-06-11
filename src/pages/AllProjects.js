@@ -2,11 +2,8 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
 import { getProjects } from "../redux/actions/projectAction";
-
 import Pagination from "react-js-pagination";
-
 import { wrapper } from "../redux/store";
-
 import Layout from "../layout/Layout";
 
 import {
@@ -50,9 +47,9 @@ export default function AllProjects() {
 
         <GridContainer>
           {allProjects.map(
-            ({ _id, title, description, tags, source, visit }) => (
+            ({ _id, title, description, tags, source, visit, image }) => (
               <BlogCard key={_id}>
-                {/* <Img src={image} /> */}
+                <Img src={image} />
                 <TitleContent>
                   <HeaderThree>{title}</HeaderThree>
                   <Hr />
