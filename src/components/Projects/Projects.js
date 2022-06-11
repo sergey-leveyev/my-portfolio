@@ -25,13 +25,14 @@ import {
 const Projects = () => {
   const { allProjects } = useSelector((state) => state.allProjects);
 
+  allProjects.reverse()
   return (
     <Section id="project">
       <SectionDivider />
       <SectionTitle main>Recent projects</SectionTitle>
       <GridContainer>
         {allProjects.map(
-          ({ _id, title, description, tags, source, visit,image }, index) => {
+          ({ _id, title, description, tags, source, visit,image }, index) => { 
             return (
               <div key={_id}>
                 {index < 4 && (
