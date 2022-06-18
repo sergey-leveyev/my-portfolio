@@ -58,10 +58,10 @@ const Frontskill = () => {
               <DiReact style={{ margin: "5px" }} size="2.1rem" />
               ReactJS
             </TextAndIcon>
-            <TextAndIcon>
+            {/* <TextAndIcon>
               <SiBlazor style={{ margin: "5px" }} size="2.1rem" />
               Blazor
-            </TextAndIcon>
+            </TextAndIcon> */}
             <TextAndIcon>
               <DiAngularSimple style={{ margin: "5px" }} size="1.85rem" />
               Angular

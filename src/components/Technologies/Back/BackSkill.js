@@ -27,10 +27,10 @@ const Backskill = () => {
             <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
             Node.js
           </TextAndIcon>
-          <TextAndIcon>
+          {/* <TextAndIcon>
             <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
             .Net Core
-          </TextAndIcon>
+          </TextAndIcon> */}
         </SingleColumnBox>
       </ListContainer>
     </ListItem>

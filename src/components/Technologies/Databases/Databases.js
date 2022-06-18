@@ -31,10 +31,10 @@ const Databases = () => {
             <SiFirebase style={{ margin: "5px" }} size="2rem" />
             Firebase
           </TextAndIcon>
-          <TextAndIcon>
+          {/* <TextAndIcon>
             <SiMicrosoftsqlserver style={{ margin: "5px" }} size="2rem" />
             SQL Server
-          </TextAndIcon>
+          </TextAndIcon> */}
         </SingleColumnBox>
       </ListContainer>
     </ListItem>
