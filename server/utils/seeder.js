@@ -5,7 +5,7 @@ const Project = require("../models/project");
 const projects = require("../data/constants");
 
 mongoose
-  .connect("mongodb://localhost:27017/portfolio")
+  .connect("mongodb+srv://root:Sl0546413505@portfolio.ggsg1z3.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("Connected to local database"));
 
 const seedProjects = async () => {

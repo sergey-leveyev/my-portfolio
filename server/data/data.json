@@ -1,11 +1,11 @@
 [
   {
-    "title": "MERN Memories",
-    "description": "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    "image": "/images/tuti.png",
-    "tags": ["Mongo", "Express", "React", "Node"],
-    "source": "https://google.com",
-    "visit": "https://google.com",
+    "title": "My portfolio",
+    "description": "My portfolio where you can read about me and see all my projects",
+    "image": "https://res.cloudinary.com/dxlrkanxc/image/upload/v1654953478/bookme/Capture_z0wgh8.png",
+    "tags": ["Next.js","Node.js","MongoDB","Redux"],
+    "source": "https://github.com/sergey-leveyev/my-portfolio",
+    "visit": "https://my-portfolio-ten-xi.vercel.app/",
     "id": 0
   }
 ]

@@ -25,7 +25,7 @@ import {
 const Projects = () => {
   const { allProjects } = useSelector((state) => state.allProjects);
 
-  allProjects.reverse();
+  // allProjects.reverse();
   return (
     <Section id="project">
       <SectionDivider />
