@@ -27,13 +27,27 @@ const Footer = () => {
           <LinkTitle>Email</LinkTitle>
           <LinkItem href="mailto:sargey7@gmail.com">sargey7@gmail.com</LinkItem>
         </LinkColumn>
+
+        <LinkColumn>
+          <LinkTitle>Linkedin</LinkTitle>
+          <LinkItem href="https://www.linkedin.com/in/sergey-leveyv-234783199/">
+            linkedin profile
+          </LinkItem>
+        </LinkColumn>
+
+        <LinkColumn>
+          <LinkTitle>Github</LinkTitle>
+          <LinkItem href="https://github.com/sergey-leveyev">
+            Github Account
+          </LinkItem>
+        </LinkColumn>
       </LinkList>
 
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-          "Give me six hours to chop down a tree, and I will spend the first four sharpening the axe."  
-          Abraham Lincoln 
+            "Give me six hours to chop down a tree, and I will spend the first
+            four sharpening the axe." Abraham Lincoln
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
