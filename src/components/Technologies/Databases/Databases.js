@@ -1,6 +1,9 @@
 import { DiDatabase } from "react-icons/di";
-import { SiMongodb, SiFirebase, SiMicrosoftsqlserver } from "react-icons/si";
-import { VscAzure } from "react-icons/vsc";
+import {
+  SiMongodb,
+  SiFirebase,
+  SiPostgresql,
+} from "react-icons/si";
 
 import {
   ListContainer,
@@ -31,10 +34,10 @@ const Databases = () => {
             <SiFirebase style={{ margin: "5px" }} size="2rem" />
             Firebase
           </TextAndIcon>
-          {/* <TextAndIcon>
-            <SiMicrosoftsqlserver style={{ margin: "5px" }} size="2rem" />
-            SQL Server
-          </TextAndIcon> */}
+          <TextAndIcon>
+            <SiPostgresql style={{ margin: "5px" }} size="2rem" />
+            Postgresql
+          </TextAndIcon>
         </SingleColumnBox>
       </ListContainer>
     </ListItem>

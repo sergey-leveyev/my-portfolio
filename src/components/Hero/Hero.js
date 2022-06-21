@@ -15,7 +15,7 @@ const Hero = () => (
         Welcome To <br />
         Sergey Leveyv`s Portfolio
       </SectionTitle>
-      <SectionText>I am a Full stack Developer....</SectionText>
+      <SectionText>Full stack Developer</SectionText>
       <Button onClick={() => (window.location = "AllProjects")}>
         All Projects
       </Button>

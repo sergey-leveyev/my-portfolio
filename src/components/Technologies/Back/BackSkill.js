@@ -1,5 +1,5 @@
 import { DiNodejsSmall } from "react-icons/di";
-import { SiDotnet } from "react-icons/si";
+import { SiDotnet,SiNestjs } from "react-icons/si";
 import { AiOutlineCloudServer } from "react-icons/ai";
 
 import {
@@ -27,10 +27,10 @@ const Backskill = () => {
             <DiNodejsSmall style={{ margin: "5px" }} size="2.5rem" />
             Node.js
           </TextAndIcon>
-          {/* <TextAndIcon>
-            <SiDotnet style={{ margin: "5px" }} size="2.5rem" />
-            .Net Core
-          </TextAndIcon> */}
+          <TextAndIcon>
+            <SiNestjs style={{ margin: "5px" }} size="2.5rem" />
+            Nest.js
+          </TextAndIcon>
         </SingleColumnBox>
       </ListContainer>
     </ListItem>
